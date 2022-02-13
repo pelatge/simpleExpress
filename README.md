@@ -1,11 +1,11 @@
-# Express-mongoose-webpack-setup
-Repo ini untuk belajar backend dengan framework expressjs sebagai web server dan databasenya menggunakn mongodb.Sedangkan untuk optimasinya menggunakan webpack sebagai bundler dan development.
+# Express-mongoose-setup
+------------------------------------------------------------------------------
+Repo ini untuk belajar backend dengan framework expressjs sebagai web server dan databasenya menggunakn mongodb.
 
 # Feature
 - Expressjs
 - Mongoose
-- Webpack
-- Hot Module Replacement
+- nodemon
 
 # Cara penggunaan
 - Buka terminal
@@ -13,6 +13,6 @@ Repo ini untuk belajar backend dengan framework expressjs sebagai web server dan
 
 
 ## Details
-- **npm start** untuk mode development menggunakan fitur hot reloading
+- **npm start** untuk mode development menggunakan fitur paket nodemon 
 - **npm run dev** untuk mode development 
 - **npm run build** untuk mode production
