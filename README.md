@@ -13,6 +13,6 @@ Repo ini untuk belajar backend dengan framework expressjs sebagai web server dan
 
 
 ## Details
-- '>npm start' untuk mode development menggunakan fitur hot reloading
-- '>npm run dev' untuk mode development 
-- '>npm run build' untuk mode production
+- 'npm start' untuk mode development menggunakan fitur hot reloading
+- 'npm run dev' untuk mode development 
+- 'npm run build' untuk mode production
