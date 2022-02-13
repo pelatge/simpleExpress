@@ -1,3 +1,2 @@
-import app from './src';
-
+import app from '../src/index.js'
 app()
