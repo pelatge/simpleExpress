@@ -26,4 +26,3 @@ app.use('/product',route);
 // listening to port
 app.listen('3000',()=> console.log('Server Running at port: 3000'));
 
-export default app;

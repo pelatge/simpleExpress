@@ -1,2 +1,3 @@
-import app from '../src/index.js'
-app()
+require("@babel/core").transformSync(('./src/index.js'), {
+  plugins: ["@babel/plugin-transform-modules-commonjs"],
+});

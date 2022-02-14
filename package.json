@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Belajar backend dengan express dan mongodb",
   "type": "module",
-  "main": "index.js",
+  "main": "index.cjs",
   "scripts": {
-    "start": "nodemon .",
+    "babel-node": "babel-node --presets='@babel/preset-env' --ignore='foo|bar|baz'",
+    "start": "nodemon --exec npm run babel-node -- ./src/index.js",
     "dev": "node index",
     "prod": "node index"
   },
@@ -18,6 +19,10 @@
     "mongoose": "^6.2.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-cli": "^6.26.0",
     "nodemon": "^2.0.15"
   }
 }
