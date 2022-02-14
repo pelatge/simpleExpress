@@ -2,7 +2,7 @@
   "name": "simpelexpress",
   "version": "1.0.0",
   "description": "Belajar backend dengan express dan mongodb",
-  "type":"module",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "babel-node": "babel-node --presets='@babel/preset-env' ",
@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "mongoose": "^6.2.1"
   },
