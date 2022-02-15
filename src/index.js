@@ -16,13 +16,13 @@ var corsOptions = {
   origin: "http://localhost:3000"
 };
 // connect ke database mongoDB
-//  mongoose.connect(process.env.URL,{ 
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-// });
-// const db = mongoose.connection;
-// db.on('error', (error)=> console.error(error));
-// db.once('open', () => console.log('Database Connected'));
+ mongoose.connect(process.env.URL,{ 
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+});
+const db = mongoose.connection;
+db.on('error', (error)=> console.error(error));
+db.once('open', () => console.log('Database Connected'));
  
 // middleware 
 app.use(cors(corsOptions));
@@ -34,7 +34,7 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to simpleExpress application." });
 });
 // route product
-//app.use('/product',route);
+app.use('/product',route);
  
 // listening to port
 app.listen('3000',()=> console.log('Server Running at port: 3000'));
