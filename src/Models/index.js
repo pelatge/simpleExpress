@@ -1,6 +1,5 @@
-import dbConfig "../config/db.common.js";
-import  mongoose "mongoose";
-import 
+import dbConfig  from "../config/db.common.js";
+import  mongoose from "mongoose";
 mongoose.Promise = global.Promise;
 const db = {};
 db.mongoose = mongoose;

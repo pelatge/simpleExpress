@@ -6,9 +6,9 @@
   "main": "index.js",
   "scripts": {
     "babel-node": "babel-node --presets='@babel/preset-env' ",
-    "start": "nodemon --exec npm run babel-node -- index.js",
+    "start": "nodemon --exec npm run babel-node -- ./dist/index.js",
     "dev": "node index",
-    "prod": "grunt babel ."
+    "prod": "gulp minify "
   },
   "keywords": [],
   "author": "pelatge",
@@ -25,6 +25,7 @@
     "@babel/node": "^7.16.8",
     "@babel/preset-env": "^7.16.11",
     "babel-cli": "^6.26.0",
+    "gulp": "^4.0.2",
     "nodemon": "^2.0.15"
   }
 }
