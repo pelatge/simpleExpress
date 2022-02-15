@@ -11,6 +11,8 @@ import cors from "cors";
 const app = express();
 import dotenv from 'dotenv'
 dotenv.config()
+
+export default function server(){
 //cors
 var corsOptions = {
   origin: "http://localhost:3000"
@@ -38,5 +40,4 @@ app.use('/product',route);
  
 // listening to port
 app.listen('3000',()=> console.log('Server Running at port: 3000'));
-
-
+}
