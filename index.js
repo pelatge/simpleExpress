@@ -1,3 +1,4 @@
-require("@babel/core").transformSync(('./src/index.js'), {
-  plugins: ["@babel/plugin-transform-modules-commonjs"],
-});
+import server from './src/index.js'
+
+server()
+console.log(process.argv);
