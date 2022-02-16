@@ -10,7 +10,7 @@ import cors from "cors";
 const app = express();
  
 // connect ke database mongoDB
-mongoose.connect("mongodb://localhost:27017/restful_db",{ 
+mongoose.connect("mongodb+srv://yodha:yodha3129>@yodha.ifxtu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",{ 
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
