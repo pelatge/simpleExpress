@@ -31,9 +31,7 @@ Repo ini untuk belajar backend dengan framework expressjs sebagai web server dan
 - Buka terminal
 - **Ketik** *git clone https://github.com/pelatge/simpleExpress.git* 
 
-
 ## Details
-
 - **npm start** untuk mode development menggunakan fitur hot reload nodemon 
 - **npm run dev** untuk mode development 
 - **npm run build** untuk mode production
