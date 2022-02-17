@@ -9,6 +9,7 @@ import route from "./Routes/index.js";
 import cors from "cors";
 // construct express function
 const app = express();
+//import serverNgrok from './Utils/index.js';
 import dotenv from 'dotenv'
 dotenv.config()
 
@@ -18,7 +19,6 @@ var corsOptions = {
   origin: "http://localhost:3000"
 };
 // connect ke database mongoDB
-
  mongoose.connect(process.env.MONGODB_URL,{ 
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -41,4 +41,5 @@ app.use('/product',route);
  
 // listening to port
 app.listen(process.env.PORT,()=> console.log('Server Running at port:',process.env.PORT));
+
 }
