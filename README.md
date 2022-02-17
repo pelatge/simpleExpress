@@ -45,4 +45,5 @@ Terletak pada kesalahan password di URL mongoDb atlas,ex;
 ### **solusi**
 - hilangkan tanda **< >** pada password
 - jangan menggunakan escape karakter kecuali di encoding terlebih dahulu
-- Harus dibedakan <password> di URL mongodb atlas bukan password yang digunakan ketika login masuk ke situs mongodb,tapi password ini adalah password database,cara ceknya buka *Security>>Database Acces>>Actions>>Edit>>password*
+- Harus dibedakan <password> di URL mongodb atlas bukan password yang digunakan ketika login masuk ke situs mongodb,tapi password ini adalah password database,cara ceknya buka
+ **Security>>Database Acces>>Actions>>Edit>>password**
