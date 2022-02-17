@@ -1,6 +1,8 @@
  import dotenv from 'dotenv'
  import ngrok from 'ngrok'
  dotenv.config()
+
+ export default function servNgrok(){
  ngrok
   .connect({
     authtoken: process.env.NGROK_TOKEN,
@@ -32,3 +34,4 @@
 //   onLogEvent: data => {console.log(data);}, // returns stdout messages from ngrok process
 // });
 // })();
+};

@@ -1,0 +1,10 @@
+// setting port web server
+PORT=
+
+// setting untuk ngrok
+NGROK_TOKEN=
+NGROK_REGION=
+
+// setting mongodb
+
+MONGO_URL=
