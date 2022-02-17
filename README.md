@@ -43,7 +43,7 @@ Repo ini untuk belajar backend dengan framework expressjs sebagai web server dan
 1.**Bad authentification failed**
 ### **problem**
 Terletak pada kesalahan password di URL mongoDb atlas,ex;
-*mongodb+srv://<userdb>:<password>@****.ifxtu.mongodb.net/productDb?retryWrites=true&w=majority*
+*mongodb+srv://**<userdb>**:**<password>**@****.ifxtu.mongodb.net/productDb?retryWrites=true&w=majority*
 ### **solusi**
 - hilangkan tanda **< >** pada password
 - jangan menggunakan escape karakter kecuali di encoding terlebih dahulu
