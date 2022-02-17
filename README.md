@@ -7,8 +7,10 @@ Repo ini untuk belajar backend dengan framework expressjs sebagai web server dan
 ## library
  - Expressjs
  - Mongoose
- - nodemon
- - gulp 
+ - Nodemon
+ - Gulp 
+ - MongoDb atlas cloud 
+ - Babel
  
 ## Environment
  - node v12.22.5
@@ -23,6 +25,6 @@ Repo ini untuk belajar backend dengan framework expressjs sebagai web server dan
 
 ## Details
 
-- **npm start** untuk mode development menggunakan fitur paket nodemon 
+- **npm start** untuk mode development menggunakan fitur hot reload nodemon 
 - **npm run dev** untuk mode development 
 - **npm run build** untuk mode production
