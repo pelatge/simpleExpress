@@ -10,6 +10,7 @@ import cors from "cors";
 // construct express function
 const app = express();
 //import serverNgrok from './Utils/index.js';
+import mongoServer() from './Conffig/db.config.js'
 import dotenv from 'dotenv'
 dotenv.config()
 
@@ -19,14 +20,8 @@ var corsOptions = {
   origin: "http://localhost:3000"
 };
 // connect ke database mongoDB
- mongoose.connect(process.env.MONGODB_URL,{ 
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
-const db = mongoose.connection;
-db.on('error', (error)=> console.error(error));
-db.once('open', () => console.log('Database Connected'));
- 
+ mongoServer()
+
 // middleware 
 app.use(cors(corsOptions));
 app.use(express.json());

@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "babel-node": "babel-node --presets='@babel/preset-env' ",
-    "minify":"gulp minify",
+    "minify": "gulp minify",
     "start": "nodemon --exec npm run babel-node -- index.js",
     "dev": "node index --mode development",
     "prod": "node index --mode production "
@@ -16,9 +16,11 @@
   "license": "ISC",
   "dependencies": {
     "@babel/register": "^7.17.0",
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.1",
     "ngrok": "^4.3.0"
   },
