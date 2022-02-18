@@ -10,7 +10,7 @@ import cors from "cors";
 // construct express function
 const app = express();
 //import serverNgrok from './Utils/index.js';
-import mongoServer() from './Conffig/db.config.js'
+import mongoServer from './Config/db.config.js'
 import dotenv from 'dotenv'
 dotenv.config()
 
