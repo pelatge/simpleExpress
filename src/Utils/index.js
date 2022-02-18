@@ -1,22 +1,15 @@
  import dotenv from 'dotenv'
  import ngrok from 'ngrok'
  dotenv.config()
-<<<<<<< HEAD
 
- export default function servNgrok(){
-=======
- 
->>>>>>> 345c570 (fit pulling from repo)
+export default function servNgrok(){
  ngrok
   .connect({
     proto:"http",
     authtoken: process.env.NGROK_TOKEN,
     addr: process.env.PORT,
-<<<<<<< HEAD
-    // onLogEvent: data => {console.log(data);},
-=======
+    // onLogEvent: data => {console.log(data);}
     //configPath: '~/.ngrok2/ngrok.yml',
->>>>>>> 345c570 (fit pulling from repo)
     // region: process.env.NGROK_REGION,
     // hostname: process.env.FLYPAPER_API_URL.replace("https://", "")
   })
@@ -43,7 +36,4 @@
 //   onLogEvent: data => {console.log(data);}, // returns stdout messages from ngrok process
 // });
 // })();
-<<<<<<< HEAD
 };
-=======
->>>>>>> 345c570 (fit pulling from repo)

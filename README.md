@@ -36,6 +36,7 @@ Repo ini untuk belajar backend dengan framework expressjs sebagai web server dan
 - **npm run dev** untuk mode development 
 - **npm run build** untuk mode production
 
+
 # Isues
 ## Mongoose
 1.**Bad authentification failed**
@@ -47,3 +48,4 @@ Terletak pada kesalahan password di URL mongoDb atlas,ex;
 - jangan menggunakan escape karakter kecuali di encoding terlebih dahulu
 - Harus dibedakan <password> di URL mongodb atlas bukan password yang digunakan ketika login masuk ke situs mongodb,tapi password ini adalah password database,cara ceknya buka
  **Security>>Database Acces>>Actions>>Edit>>password**
+
