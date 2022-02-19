@@ -4,7 +4,7 @@ import express from "express";
 //import mongoose
 import mongoose from "mongoose";
 // import routes
-import route from "./Routes/index.js";
+import {routerProduct,userRoute,authRoute} from "./Routes/index.js";
 //import cors
 import cors from "cors";
 // construct express function
@@ -32,7 +32,9 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to simpleExpress application." });
 });
 // route product
-app.use('/product',route);
+userRoute();
+authRoute();
+app.use('/product',routerProduct);
  
 // listening to port
 app.listen(process.env.PORT,()=> console.log('Server Running at port:',process.env.PORT));

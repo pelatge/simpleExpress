@@ -1,4 +1,4 @@
-import  db from './../Models/index.js;
+import  {db }from './../Models/index.js';
 const User = db.user;
 const Role = db.role;
 
@@ -7,7 +7,7 @@ import bcrypt from "bcryptjs";
 import dotenv from 'dotenv';
 dotenv.config();
 
-export const signup = (req, res) => {
+ const signup = (req, res) => {
   const user = new User({
     username: req.body.username,
     email: req.body.email,
@@ -63,7 +63,7 @@ export const signup = (req, res) => {
   });
 };
 
-export const signin = (req, res) => {
+ const signin = (req, res) => {
   User.findOne({
     username: req.body.username
   })
@@ -108,3 +108,7 @@ export const signin = (req, res) => {
       });
     });
 };
+
+const AuthController = {signin,signup};
+
+export default AuthController;

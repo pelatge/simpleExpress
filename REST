@@ -1,4 +1,4 @@
-GET http://localhost:3000/product
+GET http://localhost:3000/
 
 POST http://localhost:3000/product
 Content-type:application/json
@@ -7,3 +7,14 @@ Content-type:application/json
 	"title":"sembako",
 	"price": 20000
 }
+
+
+GET http://localhost:3000/
+
+
+GET http://localhost:3000/
+
+
+GET http://localhost:3000/
+
+GET http://localhost:3000/

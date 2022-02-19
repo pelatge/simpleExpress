@@ -1,8 +1,8 @@
 // import models
-import Product from "../Models/Product.js";
+import {Product}from "../Models/index.js";
  
 // function get All Products
-export const getProducts = async (req, res) => {
+ const getProducts = async (req, res) => {
     try {
         const products = await Product.find();
         res.json(products);
@@ -13,7 +13,7 @@ export const getProducts = async (req, res) => {
 }
  
 // function get single Product
-export const getProductById = async (req, res) => {
+ const getProductById = async (req, res) => {
     try {
         const product = await Product.findById(req.params.id);
         res.json(product);
@@ -24,7 +24,7 @@ export const getProductById = async (req, res) => {
 }
  
 // function Create Product
-export const saveProduct = async (req, res) => {
+ const saveProduct = async (req, res) => {
     const product = new Product(req.body);
     try {
         const savedProduct = await product.save();
@@ -35,7 +35,7 @@ export const saveProduct = async (req, res) => {
 }
  
 // function Update Product
-export const updateProduct = async (req, res) => {
+ const updateProduct = async (req, res) => {
     const cekId = await Product.findById(req.params.id);
     if(!cekId) return res.status(404).json({message: "Data tidak ditemukan"}); 
     try {
@@ -47,7 +47,7 @@ export const updateProduct = async (req, res) => {
 }
  
 // function Delete Product
-export const deleteProduct = async (req, res) => {
+ const deleteProduct = async (req, res) => {
     const cekId = await Product.findById(req.params.id);
     if(!cekId) return res.status(404).json({message: "Data tidak ditemukan"});
     try {
@@ -56,4 +56,13 @@ export const deleteProduct = async (req, res) => {
     } catch (error) {
         res.status(400).json({message: error.message});
     }
+}
+
+
+export {
+    getProducts,
+    getProductById,
+    saveProduct,
+    updateProduct,
+    deleteProduct
 }

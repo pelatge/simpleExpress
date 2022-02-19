@@ -1,4 +1,4 @@
-import  db from './../Models/index.js';
+import {db}from './../Models/index.js';
 import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv'
 const User = db.user;
@@ -88,4 +88,5 @@ const authJwt = {
   isAdmin,
   isModerator
 };
+
 export default authJwt;
