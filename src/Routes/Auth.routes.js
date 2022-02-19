@@ -1,9 +1,9 @@
-import { verifySignUp } from "../Middlewares/index.js";
-import {AuthController} from "../Controllers/index.js";
+import { verifySignUp } from "./../Middlewares/index.js";
+import {AuthController} from "./../Controllers/index.js";
 import express from 'express';
 const app = express();
 
-function authRoute() {
+function authRoute(app) {
   app.use(function(req, res, next) {
     res.header(
       "Access-Control-Allow-Headers",

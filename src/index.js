@@ -32,8 +32,8 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to simpleExpress application." });
 });
 // route product
-userRoute();
-authRoute();
+userRoute(app);
+authRoute(app);
 app.use('/product',routerProduct);
  
 // listening to port

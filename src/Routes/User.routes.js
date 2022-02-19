@@ -3,7 +3,7 @@ import {UserController} from "./../Controllers/index.js";
 import express from 'express';
 const app = express();
 
-function userRoute() {
+function userRoute(app) {
   app.use(function(req, res, next) {
     res.header(
       "Access-Control-Allow-Headers",
