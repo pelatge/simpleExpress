@@ -11,7 +11,7 @@ Repo ini untuk belajar backend dengan framework expressjs sebagai web server dan
  - Gulp 
  - MongoDb atlas cloud 
  - Babel
- - JsonWebToken  *//untuk security server *
+ - JsonWebToken  *//untuk security server*
  - Ngrok *//untuk mockup via tunneling remote*
  
 ## Environment
